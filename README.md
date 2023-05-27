@@ -19,11 +19,23 @@ Exchange_rate_telegram_bot — это проект, который реализ�
 В проекте для управления зависимостями используется [poetry](https://python-poetry.org/). </br>
 Выполните в консоли: </br>
 
+Для Windows: </br>
 ```
 git clone git@github.com:DmitriiParfenov/exchange_rate_telegram_bot.git
 python -m venv venv
+venv\Scripts\activate
 pip install poetry
-poetry update
+poetry install
+```
+
+Для Linux: </br>
+```
+git clone git@github.com:DmitriiParfenov/exchange_rate_telegram_bot.git
+cd exchange_rate_telegram_bot
+python3 -m venv venv
+source venv/bin/activate
+curl -sSL https://install.python-poetry.org | python3
+poetry install
 ```
 
 # Запуск
